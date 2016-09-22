@@ -1,13 +1,24 @@
-/**
- *
- * @author 
- *
- */
-class Main {
-	public constructor() {
-    	var a=5;
-    	var b=3;
-       console.log(a+b);
+// TypeScript file
+
+
+
+
+var x = process.argv[2];
+var num:number = parseInt(x);
+
+var a,b,c:number;
+var star,space:string;
+
+for(a=0;a<num;a++){
+    star = '';
+    space = '';
+    for(b=0;b<(num-a-1);b++){
+        space = space +' ';
+
+    }
+    
+    for(c=0;c<(2*a+1);c++){
+        star = star + '*';
+    }
+      console.log(space + star);
 }
-	}
-	
